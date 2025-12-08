@@ -1,0 +1,12 @@
+plugins:
+  - '@prettier/plugin-php'
+phpVersion: '8.2'
+tabWidth: 2
+singleQuote: true
+braceStyle: 1tbs
+proseWrap: always
+overrides:
+  - files: '**/*.php'
+    options:
+      parser: php
+      singleQuote: false

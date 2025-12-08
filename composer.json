@@ -1,0 +1,63 @@
+{
+  "name": "municipio-se/municipio-lts-boilerplate",
+  "description": "Municipio LTS boilerplate based on Wordpress and Municipio",
+  "license": "MIT",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Whitespace",
+      "email": "dev@whitespace.se",
+      "homepage": "https://whitespace.se"
+    }
+  ],
+  "homepage": "https://whitespace.se/municipio/",
+  "support": {
+    "issues": "https://github.com/municipio-se/municipio-lts-boilerplate/issues",
+    "source": "https://github.com/municipio-se/municipio-lts-boilerplate",
+    "docs": "https://docs.municipio.se"
+  },
+  "require": {
+    "municipio/municipio": "25.x-dev"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org",
+      "only": [
+        "wpackagist-plugin/*",
+        "wpackagist-theme/*"
+      ]
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "allow-plugins": {
+      "composer/installers": true,
+      "php-http/discovery": true,
+      "roots/wordpress-core-installer": true
+    },
+    "sort-packages": true
+  },
+  "extra": {
+    "installer-paths": {
+      "web/app/mu-plugins/{$name}/": [
+        "type:wordpress-muplugin",
+        "municipio/wp-plugin-modularity",
+        "municipio/wp-plugin-municipio-extended",
+        "wpackagist-plugin/aryo-activity-log",
+        "wpackagist-plugin/disable-comments-rb",
+        "wpackagist-plugin/disable-wordpress-updates",
+        "wpackagist-plugin/kirki",
+        "wpackagist-plugin/two-factor"
+      ],
+      "web/app/plugins/{$name}/": [
+        "type:wordpress-plugin"
+      ],
+      "web/app/themes/{$name}/": [
+        "type:wordpress-theme"
+      ]
+    },
+    "wordpress-install-dir": "web/wp"
+  }
+}

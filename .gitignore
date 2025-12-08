@@ -1,0 +1,38 @@
+# Application
+web/app/plugins/*
+!web/app/plugins/.gitkeep
+web/app/languages/*
+web/app/mu-plugins/*/
+!web/app/mu-plugins/languages
+!web/app/mu-plugins/customizations
+web/app/themes/*
+web/app/upgrade
+web/app/uploads/*
+!web/app/uploads/.gitkeep
+web/app/cache/*
+web/app/fonts/*
+
+# WordPress
+web/wp
+web/.htaccess
+
+# Logs
+*.log
+
+# Dotenv
+.env
+.env.*
+!.env.example
+
+# Composer
+/vendor
+
+# WP-CLI
+wp-cli.local.yml
+
+# Dev
+/config.*.json
+!/config.*.example.json
+
+# Node.js
+node_modules

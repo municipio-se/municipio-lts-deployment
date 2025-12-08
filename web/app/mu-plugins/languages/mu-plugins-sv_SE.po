@@ -1,0 +1,134 @@
+# Copyright (C) 2024 Roots
+# This file is distributed under the MIT License.
+msgid ""
+msgstr ""
+"Project-Id-Version: Bedrock Autoloader 1.0.3\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mu-plugins\n"
+"POT-Creation-Date: 2024-07-22T10:32:19+00:00\n"
+"PO-Revision-Date: 2024-07-22 12:32+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: sv_SE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Domain: mu-plugins\n"
+
+#. Plugin Name of the plugin
+#: mu-plugins.php
+msgid "Must-Use Plugins Handler"
+msgstr "Hanterare för obligatoriska plugins"
+
+#. Description of the plugin
+#: mu-plugins.php
+msgid "Auto-loads regular plugins in mu-plugins and translations"
+msgstr "Laddar automatiskt vanliga plugins i mu-plugins och översättningar"
+
+#. Author of the plugin
+#: mu-plugins.php
+msgid "Whitespace"
+msgstr "Whitespace"
+
+#. Author URI of the plugin
+#: mu-plugins.php
+msgid "https://www.whitespace.se/"
+msgstr "https://www.whitespace.se/"
+
+#~ msgctxt "Navigation Module Field Group Title"
+#~ msgid "Navigation module"
+#~ msgstr "Navigationsmodul"
+
+#~ msgctxt "Navigation Module Field Label"
+#~ msgid "Format"
+#~ msgstr "Format"
+
+#~ msgctxt "Navigation Module Format Choice"
+#~ msgid "Grid"
+#~ msgstr "Rutnät"
+
+#~ msgctxt "Navigation Module Format Choice"
+#~ msgid "Bar"
+#~ msgstr "Rad"
+
+#~ msgctxt "Navigation Module Format Choice"
+#~ msgid "Tree"
+#~ msgstr "Träd"
+
+#~ msgctxt "Navigation Module Field Label"
+#~ msgid "Source"
+#~ msgstr "Källa"
+
+#~ msgctxt "Navigation Module Source Choice"
+#~ msgid "Child pages"
+#~ msgstr "Underordnade sidor"
+
+#~ msgctxt "Navigation Module Source Choice"
+#~ msgid "Sibling pages"
+#~ msgstr "Syskonsidor"
+
+#~ msgctxt "Navigation Module Source Choice"
+#~ msgid "Menu"
+#~ msgstr "Meny"
+
+#~ msgctxt "Navigation Module Source Choice"
+#~ msgid "Manually selected"
+#~ msgstr "Manuellt utvalda"
+
+#~ msgctxt "Navigation Module Field Label"
+#~ msgid "Items"
+#~ msgstr "Objekt"
+
+#~ msgctxt "Navigation Module Field Label"
+#~ msgid "Link"
+#~ msgstr "Länk"
+
+#~ msgctxt "Navigation Module Field Label"
+#~ msgid "Color"
+#~ msgstr "Färg"
+
+#~ msgctxt "Navigation Module Field Label"
+#~ msgid "Icon"
+#~ msgstr "Ikon"
+
+#~ msgctxt "Page Navigation Field Label"
+#~ msgid "Description"
+#~ msgstr "Beskrivning"
+
+#~ msgid "A short description of the page to show in menus."
+#~ msgstr "En kort beskrivning av sidan som visas i menyerna."
+
+#~ msgctxt "Page Navigation Field Label"
+#~ msgid "Icon"
+#~ msgstr "Ikon"
+
+#~ msgctxt "Page Apperance Field Label"
+#~ msgid "Theme color"
+#~ msgstr "Temafärg"
+
+#~ msgctxt "Post Type Singular Name"
+#~ msgid "Navigation"
+#~ msgstr "Navigation"
+
+#~ msgctxt "Post Type General Name"
+#~ msgid "Navigation modules"
+#~ msgstr "Navigationsmoduler"
+
+#~ msgid "Outputs a menu or manually selected links"
+#~ msgstr "Visar en meny eller manuellt valda länkar"
+
+#~ msgid "Bedrock Autoloader"
+#~ msgstr "Bedrock Autoloader"
+
+#~ msgid "https://github.com/roots/bedrock-autoloader"
+#~ msgstr "https://github.com/roots/bedrock-autoloader"
+
+#~ msgid "An autoloader that enables standard plugins to be required just like must-use plugins. The autoloaded plugins are included during mu-plugin loading. An asterisk (*) next to the name of the plugin designates the plugins that have been autoloaded."
+#~ msgstr "An autoloader that enables standard plugins to be required just like must-use plugins. The autoloaded plugins are included during mu-plugin loading. An asterisk (*) next to the name of the plugin designates the plugins that have been autoloaded."
+
+#~ msgid "Roots"
+#~ msgstr "Roots"
+
+#~ msgid "https://roots.io/"
+#~ msgstr "https://roots.io/"

@@ -1,0 +1,29 @@
+# Package files
+composer.json
+composer.lock
+
+/wp-content/*
+
+# Wordpress mu-plugins
+!/wp-content/mu-plugins
+/wp-content/mu-plugins/*
+!/wp-content/mu-plugins/*.php
+
+# Plugins
+!/wp-content/plugins
+/wp-content/plugins/*
+
+# Themes
+!/wp-content/themes
+/wp-content/themes/*
+
+# Vendor directories
+vendor
+/wp
+
+# Compiled files
+dist
+tmp
+
+# Editor files
+.vscode
