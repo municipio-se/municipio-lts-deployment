@@ -6,12 +6,23 @@ This boilerplate contains all you need to create a new Municipio LTS website.
 
 1. Clone this repository
 2. Run `composer install` to install the PHP dependencies
-3. Run `wp db create` to create the database (if using local environment)
-4. Copy `.env.example` to `.env` and update it for your environment
-5. Run `wp core install` or import a database
-6. Log in to the WordPress admin
-7. Update the site’s name and other settings as needed
-8. Recommended: Update this README file with your project information
+3. Create a `.env` file in the root directory based on the `.env.example` file
+   and update it for your environment
+4. Run `wp db create` to create the database
+5. Import the boilerplate database with `wp db import boilerplate.sql`
+6. Recommended: Remove the `boilerplate.sql` file
+7. Set a new password for the WordPress admin user with
+   `wp user update 1 --user_pass=<new_password>`
+8. Update the site’s name and other settings as needed
+9. Recommended: Update this README file with your project information
+
+## Additional steps for local development
+
+1. Run `pnpm install` to install the JavaScript dependencies
+2. Run `valet link --secure <your-local-domain>` to make the site available at
+   `https://<your-local-domain>.test`
+3. Go to `https://<your-local-domain>.test/wp-admin` in your browser
+4. Log in with username `admin` and the password you set in the previous step
 
 ## Requirements
 
