@@ -26,7 +26,9 @@ This boilerplate contains all you need to create a new Municipio LTS website.
 
 ## Requirements
 
-*   **ACF Pro**: This project requires [Advanced Custom Fields Pro](https://www.advancedcustomfields.com/pro/). You will need to purchase a license and install it manually or configure your own repository for it.
-    *   **Manual Installation**: Extract the plugin to `web/app/mu-plugins/advanced-custom-fields-pro`.
-
-
+- **ACF Pro**: This project requires
+  [Advanced Custom Fields Pro](https://www.advancedcustomfields.com/pro/). You
+  will need to purchase a license and install it manually or configure your own
+  repository for it.
+  - **Manual Installation**: Extract the plugin to
+    `web/app/mu-plugins/advanced-custom-fields-pro`.
