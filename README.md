@@ -1,6 +1,10 @@
 # Municipio LTS Boilerplate
 
-This boilerplate contains all you need to create a new Municipio LTS website.
+This boilerplate contains all you need to create a new Municipio LTS website. It
+relies heavily on
+[the accompanying package bundle](https://github.com/municipio-se/municipio-lts)
+which contains the Municipio theme and a set of required and recommended
+plugins.
 
 ## Setting up a new site
 
@@ -13,10 +17,14 @@ This boilerplate contains all you need to create a new Municipio LTS website.
 6. Recommended: Remove the `boilerplate.sql` file
 7. Set a new password for the WordPress admin user with
    `wp user update 1 --user_pass=<new_password>`
-8. Update the site’s name and other settings as needed
-9. Recommended: Update this README file with your project information
+8. Update the site’s name and other settings as needed via WP-CLI or the
+   WordPress admin interface
+9. Recommended: Replace this README file with one suited for your project
 
 ## Additional steps for local development
+
+This boilerplate contains configuration for Prettier and Valet to help with
+local development. Locally we recommend following these additional steps:
 
 1. Run `pnpm install` to install the JavaScript dependencies
 2. Run `valet link --secure <your-local-domain>` to make the site available at
