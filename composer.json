@@ -1,7 +1,7 @@
 {
   "name": "municipio-se/municipio-lts-boilerplate",
   "description": "Municipio LTS boilerplate based on Wordpress and Municipio",
-  "license": "MIT",
+  "license": "GPL-2.0-or-later",
   "type": "project",
   "authors": [
     {
