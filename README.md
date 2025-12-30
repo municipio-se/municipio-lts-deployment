@@ -1,4 +1,4 @@
-# Municipio LTS Boilerplate
+# Municipio LTS Deployment
 
 This boilerplate contains all you need to create a new Municipio LTS website. It
 relies heavily on
@@ -40,3 +40,19 @@ local development. Locally we recommend following these additional steps:
   repository for it.
   - **Manual Installation**: Extract the plugin to
     `web/app/mu-plugins/advanced-custom-fields-pro`.
+
+## Deployment
+
+This project uses a **standard Bedrock-based WordPress setup**.
+
+WordPress core, plugins, and themes are managed via **Composer**. The structure follows the default Bedrock layout without additional abstractions or custom deployment logic.
+
+Deployment follows the standard Bedrock approach. Refer to the official documentation for details:
+
+* [https://roots.io/bedrock/docs/deployment/](https://roots.io/bedrock/docs/deployment/)
+
+For server provisioning and automated deployments, the setup is compatible with **Trellis**:
+
+* [https://roots.io/trellis/](https://roots.io/trellis/)
+
+Trellis is optional. The project can be deployed using any workflow that supports Bedrock-based WordPress installations.
