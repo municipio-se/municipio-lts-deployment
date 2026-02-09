@@ -1,0 +1,39 @@
+touch husky.log
+touch husky-error.log
+
+# Abort without error if ./config.json does not exist
+if [ ! -f ./config.json ]; then
+  echo "No config.json found. Skipping pre-commit hook."
+  exit 0
+fi
+
+# Switch to Node version from .nvmrc
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# Check if nvm is available
+if ! command -v nvm >/dev/null 2>&1; then
+  echo "Error: nvm is not available. Please install nvm or ensure it's properly configured."
+  exit 1
+fi
+
+nvm use
+
+# Check that we are using the correct major Node version from .nvmrc. Fail if we are not
+required_node_version=$(cat .nvmrc | tr -d 'v')
+current_node_version=$(node -v | tr -d 'v' | cut -d. -f1)
+if [ "$required_node_version" != "$current_node_version" ]; then
+  echo "Error: Node version $required_node_version is required. You are using $current_node_version at $(which node)."
+  exit 1
+fi
+
+# Build assets
+if ! pnpm build >husky.log 2>husky-error.log; then
+  echo "Asset building failed. Check husky-error.log for details."
+  exit 1
+fi
+
+# Stage changes
+git add web/app/mu-plugins/dist
+
+exit 0

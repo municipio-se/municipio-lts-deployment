@@ -11,6 +11,9 @@ importers:
       '@prettier/plugin-php':
         specifier: ^0.22.2
         version: 0.22.4(prettier@3.7.4)
+      husky:
+        specifier: ^9.1.7
+        version: 9.1.7
       prettier:
         specifier: ^3.3.3
         version: 3.7.4
@@ -24,6 +27,11 @@ packages:
     resolution: {integrity: sha512-uZWqfyrwsxScIYkmVcfnoQGFmKVMXTHD5pqYT4l8fxzm5P3XY94hTPbf8X6TFCi2QTZBIot7GS8lfIjQjldc2g==}
     peerDependencies:
       prettier: ^3.0.0
+
+  husky@9.1.7:
+    resolution: {integrity: sha512-5gs5ytaNjBrh5Ow3zrvdUUY+0VxIuWVL4i9irt6friV+BqdCfmV11CQTWMiBYWHbXhco+J1kHfTOUkePhCDvMA==}
+    engines: {node: '>=18'}
+    hasBin: true
 
   linguist-languages@7.31.2:
     resolution: {integrity: sha512-UQv5iuzEcGoYWdc/Ea2yqLiFbe8rQmIa5uD1FLwF5vBYmwbTvJlPJfHaIVtfYZTQf2wg7pzhxkwkGPP3q+v+EA==}
@@ -104,6 +112,8 @@ snapshots:
       linguist-languages: 7.31.2
       php-parser: 3.2.5
       prettier: 3.7.4
+
+  husky@9.1.7: {}
 
   linguist-languages@7.31.2: {}
 

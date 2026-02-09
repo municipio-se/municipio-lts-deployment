@@ -1,7 +1,12 @@
 {
-  "scripts": {},
+  "scripts": {
+    "prepare": "husky ./.husky",
+    "build": "pnpm run build:mx",
+    "build:mx": "cd web/app/mu-plugins/municipio-extended && pnpm i && pnpm run build"
+  },
   "devDependencies": {
     "@prettier/plugin-php": "^0.22.2",
+    "husky": "^9.1.7",
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.5"
   }

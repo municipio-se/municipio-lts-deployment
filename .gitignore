@@ -4,7 +4,8 @@ web/app/plugins/*
 web/app/languages/*
 web/app/mu-plugins/*/
 !web/app/mu-plugins/languages
-!web/app/mu-plugins/customizations
+!web/app/mu-plugins/src
+!web/app/mu-plugins/dist
 web/app/themes/*
 web/app/upgrade
 web/app/uploads/*
@@ -33,6 +34,7 @@ wp-cli.local.yml
 # Dev
 /config.*.json
 !/config.*.example.json
+!/config.example.json
 
 # Node.js
 node_modules
