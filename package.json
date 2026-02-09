@@ -1,4 +1,6 @@
 {
+  "name": "municipio-lts-boilerplate",
+  "version": "2025.12.1",
   "scripts": {
     "prepare": "husky ./.husky",
     "build": "pnpm run build:mx",
