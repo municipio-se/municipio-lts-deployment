@@ -45,6 +45,7 @@
         "type:wordpress-muplugin",
         "municipio/wp-plugin-modularity",
         "municipio/wp-plugin-municipio-extended",
+        "municipio/wp-plugin-tracking-gdpr",
         "wpackagist-plugin/aryo-activity-log",
         "wpackagist-plugin/disable-comments-rb",
         "wpackagist-plugin/disable-wordpress-updates",
