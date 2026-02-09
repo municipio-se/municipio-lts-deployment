@@ -1,6 +1,6 @@
-# Package files
-composer.json
+# Lock files
 composer.lock
+pnpm-lock.yaml
 
 /wp-content/*
 
