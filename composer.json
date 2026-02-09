@@ -7,7 +7,7 @@
     {
       "name": "Whitespace",
       "email": "dev@whitespace.se",
-      "homepage": "https://whitespace.se"
+      "homepage": "https://whitespace.se/municipio"
     }
   ],
   "homepage": "https://whitespace.se/municipio/",
@@ -37,6 +37,8 @@
       "php-http/discovery": true,
       "roots/wordpress-core-installer": true
     },
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
     "sort-packages": true
   },
   "extra": {
