@@ -173,6 +173,8 @@ ini_set("display_errors", "0");
 Config::define("EP_HOST", env("EP_HOST") ?: "http://localhost:9200");
 Config::define("ACF_LITE", env("ACF_LITE") ?? true);
 Config::define("MX_DEBUG", env("MX_DEBUG") ?? false);
+// New projects use palette presets instead of free-form text module box colors.
+Config::define("MUNICIPIO_EXTENDED_MOD_TEXT_USE_COLOR_PRESETS", true);
 Config::define(
   "TWO_FACTOR_ENFORCE_ADMIN",
   env("TWO_FACTOR_ENFORCE_ADMIN") ?? false,
