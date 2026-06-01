@@ -9,17 +9,17 @@ importers:
   .:
     devDependencies:
       '@prettier/plugin-php':
-        specifier: ^0.22.2
-        version: 0.22.4(prettier@3.7.4)
+        specifier: ^0.22.4
+        version: 0.22.4(prettier@3.8.3)
       husky:
         specifier: ^9.1.7
         version: 9.1.7
       prettier:
-        specifier: ^3.3.3
-        version: 3.7.4
+        specifier: ^3.8.3
+        version: 3.8.3
       prettier-plugin-tailwindcss:
-        specifier: ^0.6.5
-        version: 0.6.14(prettier@3.7.4)
+        specifier: ^0.6.14
+        version: 0.6.14(prettier@3.8.3)
 
 packages:
 
@@ -36,8 +36,8 @@ packages:
   linguist-languages@7.31.2:
     resolution: {integrity: sha512-UQv5iuzEcGoYWdc/Ea2yqLiFbe8rQmIa5uD1FLwF5vBYmwbTvJlPJfHaIVtfYZTQf2wg7pzhxkwkGPP3q+v+EA==}
 
-  php-parser@3.2.5:
-    resolution: {integrity: sha512-M1ZYlALFFnESbSdmRtTQrBFUHSriHgPhgqtTF/LCbZM4h7swR5PHtUceB2Kzby5CfqcsYwBn7OXTJ0+8Sajwkw==}
+  php-parser@3.6.0:
+    resolution: {integrity: sha512-0CZrf+w7Fh9/Jkw64y2Ihh5IQZJjhK6VUxbLJL3CpuA6h0b3yaADAwrXz3WL1qA6PzQEl/cE9K42WKbp0zkECQ==}
 
   prettier-plugin-tailwindcss@0.6.14:
     resolution: {integrity: sha512-pi2e/+ZygeIqntN+vC573BcW5Cve8zUB0SSAGxqpB4f96boZF4M3phPVoOFCeypwkpRYdi7+jQ5YJJUwrkGUAg==}
@@ -100,27 +100,27 @@ packages:
       prettier-plugin-svelte:
         optional: true
 
-  prettier@3.7.4:
-    resolution: {integrity: sha512-v6UNi1+3hSlVvv8fSaoUbggEM5VErKmmpGA7Pl3HF8V6uKY7rvClBOJlH6yNwQtfTueNkGVpOv/mtWL9L4bgRA==}
+  prettier@3.8.3:
+    resolution: {integrity: sha512-7igPTM53cGHMW8xWuVTydi2KO233VFiTNyF5hLJqpilHfmn8C8gPf+PS7dUT64YcXFbiMGZxS9pCSxL/Dxm/Jw==}
     engines: {node: '>=14'}
     hasBin: true
 
 snapshots:
 
-  '@prettier/plugin-php@0.22.4(prettier@3.7.4)':
+  '@prettier/plugin-php@0.22.4(prettier@3.8.3)':
     dependencies:
       linguist-languages: 7.31.2
-      php-parser: 3.2.5
-      prettier: 3.7.4
+      php-parser: 3.6.0
+      prettier: 3.8.3
 
   husky@9.1.7: {}
 
   linguist-languages@7.31.2: {}
 
-  php-parser@3.2.5: {}
+  php-parser@3.6.0: {}
 
-  prettier-plugin-tailwindcss@0.6.14(prettier@3.7.4):
+  prettier-plugin-tailwindcss@0.6.14(prettier@3.8.3):
     dependencies:
-      prettier: 3.7.4
+      prettier: 3.8.3
 
-  prettier@3.7.4: {}
+  prettier@3.8.3: {}
