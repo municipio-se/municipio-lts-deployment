@@ -74,7 +74,7 @@ class LocalValetDriver extends BasicValetDriver {
   }
 
   private function forceTrailingSlash($uri) {
-    if (substr($uri, -1 * strlen("/wp-admin")) == "/wp-admin") {
+    if (substr($uri, -(1 * strlen("/wp-admin"))) == "/wp-admin") {
       header("Location: " . $uri . "/");
       die();
     }

@@ -11,7 +11,7 @@ class LocalValetDriver extends BasicValetDriver {
   public $wp_root = "/wp";
 
   public function serves($sitePath, $siteName, $uri) {
-    return is_dir($sitePath . '/web' . $this->wp_root . "/") &&
+    return is_dir($sitePath . "/web" . $this->wp_root . "/") &&
       file_exists($sitePath . "/web/wp-config.php");
   }
 
@@ -43,16 +43,20 @@ class LocalValetDriver extends BasicValetDriver {
       }
     }
 
-    return parent::frontControllerPath($sitePath . '/web', $siteName, $uri);
+    return parent::frontControllerPath($sitePath . "/web", $siteName, $uri);
   }
 
   public function isStaticFile($sitePath, $siteName, $uri) {
     $uri = $this->stripMultisiteSubdir($uri);
     if (
-      $this->isActualFile($staticFilePath = $sitePath . '/web' . $this->wp_root . $uri)
+      $this->isActualFile(
+        $staticFilePath = $sitePath . "/web" . $this->wp_root . $uri,
+      )
     ) {
       return $staticFilePath;
-    } elseif ($this->isActualFile($staticFilePath = $sitePath . '/web' . $uri)) {
+    } elseif (
+      $this->isActualFile($staticFilePath = $sitePath . "/web" . $uri)
+    ) {
       return $staticFilePath;
     }
     return false;
@@ -66,7 +70,7 @@ class LocalValetDriver extends BasicValetDriver {
   }
 
   private function forceTrailingSlash($uri) {
-    if (substr($uri, -1 * strlen("/wp-admin")) == "/wp-admin") {
+    if (substr($uri, -(1 * strlen("/wp-admin"))) == "/wp-admin") {
       header("Location: " . $uri . "/");
       die();
     }
@@ -74,14 +78,22 @@ class LocalValetDriver extends BasicValetDriver {
   }
 
   protected function asActualWordpressRootFile($sitePath, $uri) {
-    return $sitePath . '/web' . $this->wp_root . $uri;
+    return $sitePath . "/web" . $this->wp_root . $uri;
   }
 
   protected function asWordpressRootPhpIndexFileInDirectory($sitePath, $uri) {
-    return $sitePath . '/web' . $this->wp_root . rtrim($uri, "/") . "/index.php";
+    return $sitePath .
+      "/web" .
+      $this->wp_root .
+      rtrim($uri, "/") .
+      "/index.php";
   }
 
   protected function asWordpressRootHtmlIndexFileInDirectory($sitePath, $uri) {
-    return $sitePath . '/web' . $this->wp_root . rtrim($uri, "/") . "/index.html";
+    return $sitePath .
+      "/web" .
+      $this->wp_root .
+      rtrim($uri, "/") .
+      "/index.html";
   }
 }

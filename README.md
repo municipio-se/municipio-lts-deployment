@@ -1,21 +1,28 @@
 # Municipio LTS Deployment
 
 This boilerplate contains all you need to create a new Municipio LTS website. It
-relies on the accompanying [package bundle](https://github.com/municipio-se/municipio-lts)
-which contains the Municipio theme and a set of required and recommended
-plugins.
+relies on the accompanying
+[package bundle](https://github.com/municipio-se/municipio-lts) which contains
+the Municipio theme and a set of required and recommended plugins.
 
 ## What is Municipio LTS?
 
-- Long-term support with a lower development pace, fewer new features, continuous security updates, and one stable release per year.
+- Long-term support with a lower development pace, fewer new features,
+  continuous security updates, and one stable release per year.
 
-- A limited set of widely requested features, along with fixes related to performance, security, and other cross-cutting technical aspects within Municipio.
+- A limited set of widely requested features, along with fixes related to
+  performance, security, and other cross-cutting technical aspects within
+  Municipio.
 
-- Integrations structured to support open-source and self-hosted services, with the ability to connect alternatives such as [Elasticsearch](https://github.com/elastic/elasticsearch).
+- Integrations structured to support open-source and self-hosted services, with
+  the ability to connect alternatives such as
+  [Elasticsearch](https://github.com/elastic/elasticsearch).
 
-- Municipio packages adapted to a Bedrock-based structure, following established standards.
+- Municipio packages adapted to a Bedrock-based structure, following established
+  standards.
 
-- Maintained by [Whitespace AB](https://whitespace.se/), based on experience managing and developing Municipio for more than 20 organizations.
+- Maintained by [Whitespace AB](https://whitespace.se/), based on experience
+  managing and developing Municipio for more than 20 organizations.
 
 ## Setting up a new site
 
@@ -34,8 +41,9 @@ plugins.
 
 ## Additional steps for local development
 
-This boilerplate contains configuration for [Prettier](https://prettier.io/) and [Valet](https://github.com/laravel/valet) to help with
-local development. Locally we recommend following these additional steps:
+This boilerplate contains configuration for [Prettier](https://prettier.io/) and
+[Valet](https://github.com/laravel/valet) to help with local development.
+Locally we recommend following these additional steps:
 
 1. Run `pnpm install` to install the JavaScript dependencies
 2. Run `valet link --secure <your-local-domain>` to make the site available at
@@ -56,14 +64,19 @@ local development. Locally we recommend following these additional steps:
 
 This project uses a **standard Bedrock-based WordPress setup**.
 
-WordPress core, plugins, and themes are managed via **[Composer](https://getcomposer.org/)**. The structure follows the default Bedrock layout without additional abstractions or custom deployment logic.
+WordPress core, plugins, and themes are managed via
+**[Composer](https://getcomposer.org/)**. The structure follows the default
+Bedrock layout without additional abstractions or custom deployment logic.
 
-Deployment follows the standard Bedrock approach. Refer to the official documentation for details:
+Deployment follows the standard Bedrock approach. Refer to the official
+documentation for details:
 
-* [https://roots.io/bedrock/docs/deployment/](https://roots.io/bedrock/docs/deployment/)
+- [https://roots.io/bedrock/docs/deployment/](https://roots.io/bedrock/docs/deployment/)
 
-For server provisioning and automated deployments, the setup is compatible with **Trellis**:
+For server provisioning and automated deployments, the setup is compatible with
+**Trellis**:
 
-* [https://roots.io/trellis/](https://roots.io/trellis/)
+- [https://roots.io/trellis/](https://roots.io/trellis/)
 
-Trellis is optional. The project can be deployed using any workflow that supports Bedrock-based WordPress installations.
+Trellis is optional. The project can be deployed using any workflow that
+supports Bedrock-based WordPress installations.

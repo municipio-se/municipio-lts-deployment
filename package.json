@@ -2,9 +2,10 @@
   "name": "municipio-lts-boilerplate",
   "version": "2025.12.1",
   "scripts": {
-    "prepare": "husky ./.husky",
     "build": "pnpm run build:mx",
-    "build:mx": "cd web/app/mu-plugins/municipio-extended && pnpm i && pnpm run build"
+    "build:mx": "cd web/app/mu-plugins/municipio-extended && pnpm i && pnpm run build",
+    "format": "bunx --bun prettier . --write --ignore-unknown",
+    "prepare": "husky ./.husky"
   },
   "devDependencies": {
     "@prettier/plugin-php": "^0.22.4",

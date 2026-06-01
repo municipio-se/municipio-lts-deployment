@@ -1,21 +1,22 @@
-# Lock files
+# Package files
+composer.json
 composer.lock
 pnpm-lock.yaml
 
-/wp-content/*
+/web/app/*
 
 # Wordpress mu-plugins
-!/wp-content/mu-plugins
-/wp-content/mu-plugins/*
-!/wp-content/mu-plugins/*.php
+!/web/app/mu-plugins
+/web/app/mu-plugins/*
+!/web/app/mu-plugins/*.php
 
 # Plugins
-!/wp-content/plugins
-/wp-content/plugins/*
+!/web/app/plugins
+/web/app/plugins/*
 
 # Themes
-!/wp-content/themes
-/wp-content/themes/*
+!/web/app/themes
+/web/app/themes/*
 
 # Vendor directories
 vendor
